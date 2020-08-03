@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="container">
+
+
+    <div class="main">
+      <h1 class="main__title">Social Media Dashboard</h1>
+      <h4 class="mild-white">Total Followers: 23,004</h4>
+      <div class="line"></div>
+      <div class="theme__toggler">
+        <p class="theme__toggler--text mild-white">Dark Mode</p>
+        <input class="checkbox" type="checkbox" name="" id="toggle">
+        <label for="toggle" class="switch toggler"></label>
+      </div>
+      <div class="flexbox">
+        <div class="main__content facebook">
+          <div class="main__type">
+            <img src="images/icon-facebook.svg" alt="">
+            <p class="mild-white main__name">@nathanf</p>
+          </div>
+          <p class="title__count"> 1987</p>
+          <p class="mild-white line-spacing">Followers</p>
+
+          <p class="followers-count increasing"><span class="followers-indicator"><img src="images/icon-up.svg"
+                alt=""></span> 12
+            Today</p>
+
+
+        </div>
+        <div class="main__content instagram">
+          <div class="main__type">
+            <img src="images/icon-instagram.svg" alt="">
+            <p class="mild-white main__name">@nathanf</p>
+          </div>
+          <p class="title__count"> 1044</p>
+          <p class="mild-white line-spacing">Followers</p>
+
+          <p class="followers-count increasing"><span class="followers-indicator"><img src="images/icon-up.svg"
+                alt=""></span> 99
+            Today</p>
+        </div>
+        <div class="main__content twitter">
+          <div class="main__type">
+            <img src="images/icon-twitter.svg" alt="">
+            <p class="mild-white main__name">@realnathanf</p>
+          </div>
+          <p class="title__count"> 11k</p>
+          <p class="mild-white line-spacing">Followers</p>
+
+          <p class="followers-count increasing"><span class="followers-indicator"><img src="images/icon-up.svg"
+                alt=""></span> 199
+            Today</p>
+        </div>
+        <div class="main__content youtube">
+          <div class="main__type">
+            <img src="images/icon-youtube.svg" alt="">
+            <p class="mild-white main__name">Nathan F.</p>
+          </div>
+          <p class="title__count"> 8239</p>
+          <p class="mild-white line-spacing">Subscribers</p>
+
+          <p class="followers-count decreasing"><span class="followers-indicator"><img src="images/icon-down.svg"
+                alt=""></span> 144
+            Today</p>
+        </div>
+      </div>
+    </div>
+    <section class="second-main">
+      <h1 class="">Overview - Today</h1>
+
+      <div class="flexbox">
+        <div class="second-main__content ">
+          <div class="second-main__heading row">
+            <p class="mild-white">Page Views</p>
+            <img src="images/icon-facebook.svg" alt="">
+          </div>
+          <div class="second-main__count row">
+            <h1>78</h1>
+            <p class="count__color increasing"><span class="followers-indicator"><img src="images/icon-up.svg"
+                  alt=""></span> 2%</p>
+
+          </div>
+
+        </div>
+        <div class="second-main__content ">
+          <div class="second-main__heading row">
+            <p class="mild-white"> Likes</p>
+            <img src="images/icon-facebook.svg" alt="">
+          </div>
+          <div class="second-main__count row">
+            <h1>52</h1>
+            <p class="count__color decreasing "><span class="followers-indicator"><img src="images/icon-down.svg"
+                  alt=""></span> 2%</p>
+
+          </div>
+
+        </div>
+        <div class="second-main__content ">
+          <div class="second-main__heading row">
+            <p class="mild-white"> Likes</p>
+            <img src="images/icon-instagram.svg" alt="">
+          </div>
+          <div class="second-main__count row">
+            <h1>5462</h1>
+            <p class="count__color increasing "><span class="followers-indicator"><img src="images/icon-up.svg"
+                  alt=""></span>2257%</p>
+
+          </div>
+
+        </div>
+        <div class="second-main__content ">
+          <div class="second-main__heading row">
+            <p class="mild-white">Profile Views</p>
+            <img src="images/icon-instagram.svg" alt="">
+          </div>
+          <div class="second-main__count row">
+            <h1>52k</h1>
+            <p class="count__color increasing "><span class="followers-indicator"><img src="images/icon-up.svg"
+                  alt=""></span>1375%</p>
+
+          </div>
+
+        </div>
+        <div class="second-main__content ">
+          <div class="second-main__heading row">
+            <p class="mild-white"> Retweets</p>
+            <img src="images/icon-twitter.svg" alt="">
+          </div>
+          <div class="second-main__count row">
+            <h1>117</h1>
+            <p class="count__color increasing "><span class="followers-indicator"><img src="images/icon-up.svg"
+                  alt=""></span>303%</p>
+
+          </div>
+
+        </div>
+        <div class="second-main__content ">
+          <div class="second-main__heading row">
+            <p class="mild-white"> Likes</p>
+            <img src="images/icon-twitter.svg" alt="">
+          </div>
+          <div class="second-main__count row">
+            <h1>501</h1>
+            <p class="count__color increasing "><span class="followers-indicator"><img src="images/icon-up.svg"
+                  alt=""></span>557%</p>
+
+          </div>
+
+        </div>
+        <div class="second-main__content ">
+          <div class="second-main__heading row">
+            <p class="mild-white"> Likes</p>
+            <img src="images/icon-youtube.svg" alt="">
+          </div>
+          <div class="second-main__count row">
+            <h1>107</h1>
+            <p class="count__color increasing "><span class="followers-indicator"><img src="images/icon-up.svg"
+                  alt=""></span>19%</p>
+
+          </div>
+
+        </div>
+        <div class="second-main__content ">
+          <div class="second-main__heading row">
+            <p class="mild-white">Total Views</p>
+            <img src="images/icon-youtube.svg" alt="">
+          </div>
+          <div class="second-main__count row">
+            <h1>1407</h1>
+            <p class="count__color increasing "><span class="followers-indicator"><img src="images/icon-up.svg"
+                  alt=""></span>12%</p>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a target='_blank' href="https://github.com/Proomod">Pramod</a>.
+  </div>
+  <script>
+    let root = document.querySelector('html');
+    const checkboxStatus = document.querySelector('input');
+
+    function themeToggler(e) {
+      console.log(checkboxStatus.checked)
+
+      if (checkboxStatus.checked) {
+        root.style.setProperty('--bg-color', 'hsl(230, 17%, 14%)')
+        root.style.setProperty('--text-color', 'hsl(0, 0%, 100%)')
+        root.style.setProperty('--container-bg', 'hsl(228, 28%, 20%)')
+        root.style.setProperty('--container-text', 'hsl(230, 17%, 14%)')
+        root.style.setProperty('--textgrey-color', 'hsl(228, 34%, 66%)')
+
+      } else {
+        root.style.setProperty('--bg-color', 'hsl(0, 0%, 100%)')
+        root.style.setProperty('--text-color', 'hsl(230, 17%, 14%)')
+        root.style.setProperty('--container-bg', 'hsl(227, 47%, 96%)')
+        root.style.setProperty('--container-text', 'hsl(228,12%,44%)')
+        root.style.setProperty('--textgrey-color', 'hsl(228, 12%, 44%)')
+
+      }
+
+    }
+    checkboxStatus.addEventListener('change', themeToggler)
+  </script>
+</body>
+
+</html>
