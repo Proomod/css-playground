@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="theme-color" content="">
+  <meta name="theme-color" content="#ffffff">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
 
@@ -214,10 +214,8 @@
   <script>
     let root = document.querySelector('html');
     const checkboxStatus = document.querySelector('input');
-    let meta = document.createElement('meta')
-    meta.name = "theme-color";
-    let hexVal = HSLToHex(getComputedStyle(root).getPropertyValue('--bg-color'))
-    console.log(hexVal)
+    let meta = document.querySelector('meta[name=theme-color]')
+
 
 
     function themeToggler(e) {
@@ -238,8 +236,10 @@
         root.style.setProperty('--textgrey-color', 'hsl(228, 12%, 44%)')
 
       }
-      meta.content = `${hexVal}`;
-      document.head.appendChild(meta)
+      let hexVal = HSLToHex(getComputedStyle(root).getPropertyValue('--bg-color'));
+      console.log(hexVal);
+      meta.setAttribute("content", `${hexVal}`);
+
 
     }
     checkboxStatus.addEventListener('change', themeToggler);
